@@ -1,6 +1,6 @@
 # Book Database
 
-This project fetches book data from the fable API and stores it in a SQLite database.
+This project fetches book data from the fable.co API and stores it in a SQLite database.
 
 ## Setup
 
