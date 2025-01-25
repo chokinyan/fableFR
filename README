@@ -1,19 +1,19 @@
 # Book Database
 
-This project fetches book data from the fable.co API and stores it in a SQLite database.
+This project fetches book data from the https://fable.co API and stores it in a SQLite database.
 
 ## Setup
 
 1. Install the required Python packages:
     ```sh
-    pip install requests sqlite3
+    pip install requests
     ```
 
 2. Ensure you have SQLite installed on your system.
 
 ## Usage
 
-1. Update the  variable in  with the API endpoint.
+1. Update the `API_ENDPOINT` variable in `fable.py` with the API endpoint.
 
 2. Run the script:
     ```sh
@@ -21,6 +21,12 @@ This project fetches book data from the fable.co API and stores it in a SQLite d
     ```
 
 3. The script will create the necessary tables and insert the book data into the `db/book.db` SQLite database.
+
+## Find userCode and bookListCode
+
+Go to the `finished category` of the user
+
+![Find userCode and bookListCode](path/to/your/image.png)
 
 ## Database Schema
 

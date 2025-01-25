@@ -154,7 +154,7 @@ def main():
     create_tables()
 
     # url of the api of the finish book for the user
-    url = ""
+    url = f"https://api.fable.co/api/v2/users/{userCode}/book_lists/{bookListCode}/books?offset=0&limit=20"
     canNext = True
 
     while canNext:
@@ -170,6 +170,8 @@ def main():
             canNext = False
     
 if __name__ == '__main__':
+    userCode = "userCode"
+    bookListCode = "bookListCode"
     con = sqlite3.connect("db/book.db")
     cur = con.cursor()
     main()
