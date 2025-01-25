@@ -1,0 +1,38 @@
+# Book Database
+
+This project fetches book data from an API and stores it in a SQLite database.
+
+## Setup
+
+1. Install the required Python packages:
+    ```sh
+    pip install requests sqlite3
+    ```
+
+2. Ensure you have SQLite installed on your system.
+
+## Usage
+
+1. Update the  variable in  with the API endpoint.
+
+2. Run the script:
+    ```sh
+    python fable.py
+    ```
+
+3. The script will create the necessary tables and insert the book data into the `db/book.db` SQLite database.
+
+## Database Schema
+
+The database contains the following tables:
+- `book`
+- `author`
+- `subject`
+- `genre`
+- `storygraph_tag`
+- `review_summary`
+- `users`
+
+## License
+
+This project is licensed under the MIT License.
